@@ -6,12 +6,18 @@
 //
 
 import SwiftUI
+import FirebaseCore
 
 @main
 struct ChatmeApp: App {
+    
+    init() {
+        FirebaseApp.configure()
+    }
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            SignInView()
         }
     }
 }

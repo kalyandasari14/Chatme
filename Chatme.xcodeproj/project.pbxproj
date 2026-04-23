@@ -6,13 +6,33 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		300A483A2F7AC2F4009CF7D2 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 300A48392F7AC2F4009CF7D2 /* FirebaseAuth */; };
+		300A483C2F7AC2F4009CF7D2 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 300A483B2F7AC2F4009CF7D2 /* FirebaseFirestore */; };
+		303C4D732F858E760007B1B6 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 303C4D722F858E760007B1B6 /* GoogleSignIn */; };
+		303C4D752F858E760007B1B6 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 303C4D742F858E760007B1B6 /* GoogleSignInSwift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		300A48282F7AC165009CF7D2 /* Chatme.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chatme.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		303C4D702F858E400007B1B6 /* Exceptions for "Chatme" folder in "Chatme" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 300A48272F7AC165009CF7D2 /* Chatme */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		300A482A2F7AC165009CF7D2 /* Chatme */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				303C4D702F858E400007B1B6 /* Exceptions for "Chatme" folder in "Chatme" target */,
+			);
 			path = Chatme;
 			sourceTree = "<group>";
 		};
@@ -23,6 +43,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				300A483A2F7AC2F4009CF7D2 /* FirebaseAuth in Frameworks */,
+				300A483C2F7AC2F4009CF7D2 /* FirebaseFirestore in Frameworks */,
+				303C4D732F858E760007B1B6 /* GoogleSignIn in Frameworks */,
+				303C4D752F858E760007B1B6 /* GoogleSignInSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +89,10 @@
 			);
 			name = Chatme;
 			packageProductDependencies = (
+				300A48392F7AC2F4009CF7D2 /* FirebaseAuth */,
+				300A483B2F7AC2F4009CF7D2 /* FirebaseFirestore */,
+				303C4D722F858E760007B1B6 /* GoogleSignIn */,
+				303C4D742F858E760007B1B6 /* GoogleSignInSwift */,
 			);
 			productName = Chatme;
 			productReference = 300A48282F7AC165009CF7D2 /* Chatme.app */;
@@ -94,6 +122,10 @@
 			);
 			mainGroup = 300A481F2F7AC165009CF7D2;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				300A48382F7AC2F4009CF7D2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				303C4D712F858E760007B1B6 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 300A48292F7AC165009CF7D2 /* Products */;
 			projectDirPath = "";
@@ -253,6 +285,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Chatme/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -284,6 +317,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Chatme/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -328,6 +362,48 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		300A48382F7AC2F4009CF7D2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.11.0;
+			};
+		};
+		303C4D712F858E760007B1B6 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		300A48392F7AC2F4009CF7D2 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 300A48382F7AC2F4009CF7D2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		300A483B2F7AC2F4009CF7D2 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 300A48382F7AC2F4009CF7D2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		303C4D722F858E760007B1B6 /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 303C4D712F858E760007B1B6 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+		303C4D742F858E760007B1B6 /* GoogleSignInSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 303C4D712F858E760007B1B6 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignInSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 300A48202F7AC165009CF7D2 /* Project object */;
 }
